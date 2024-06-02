@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    padding: 0%;
+    background-image: linear-gradient(to right, rgba(38, 208, 202, 0.6), rgb(155, 198, 125, 0.6));
+}
+
+header{
+    text-align: center;
+    margin-top: 2%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+
+.container {
+    margin-top: 4%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+}
+
+.filters {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4%;
+}
+
+.filter h3 {
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+.filter input {
+    height: 4vh;
+    width: 90%;
+    font-family: 'Poppins';
+    padding: 2px;
+    font-size: 100%;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-movie {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    width: 14vw;
+    border-radius: 5px;
+    height: 7vh;
+    background-color: rgb(159, 164, 215);
+}
+.search-movie h3 {
+    cursor: pointer;
+}
+.search-movie:hover {
+    transform: scaleX(1.1);
+    background-color: rgb(93, 93, 168);
+}
+
+.movie-results {
+    background-color: #b7e3e1;
+    width: 90%;
+    height: 50vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#movie-table {
+    width: 90%;
+}
+
+#movie-table th {
+    text-align: left;
+    padding-left: 2%;
+    font-size: large;
+    font-family: "Poppins";
+    color: #304959;
+    background-color: #b4efec;
+    padding-bottom: 1%;
+    padding-top:2%;
+}
+#movie-table tr {
+    font-size: large;
+}
+#movie-table tr:nth-child(odd) {
+    background-color: #D6EEEE;
+}
+
+#movie-table tr:hover {
+    background-color: #D6EEEE;
+}
+
+#movie-table tr td {
+    padding: 2%;
+}
+
+
+
+#movie-list-result li {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}   

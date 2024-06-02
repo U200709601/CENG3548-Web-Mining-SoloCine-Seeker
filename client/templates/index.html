@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB MINING-3548 | SoloCine Seeker</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<header>
+    <h2 class="heading">SoloCine Seeker</h3>
+</header>
+<body>
+    <div class="container">
+        <div class="filters">
+            <div class="filter" id="name-filter">
+                <h3 class="filter-name">Movie Name:</h3>
+                <input type="text" id="name-input">
+            </div>
+            <div class="filter" id="min-point-filter">
+                <h3 class="filter-name">Min Point:</h3>
+                <input type="number" name="min-point" id="min-point-input" min="8.0" step="0.1" value="8.0">
+            </div>
+            <div class="filter" id="max-point-filter">
+                <h3 class="filter-name">Max Point:</h3>
+                <input type="number" name="max-point" id="max-point-input">
+            </div>
+    
+            <div class="filter" id="min-year-filter">
+                <h3 class="filter-name">Min Year:</h3>
+                <input type="number" name="min-year"   id="min-year-input">
+    
+            </div>
+            <div class="filter" id="max-year-filter">
+                <h3 class="filter-name">Max Year:</h3>
+                <input type="number" name="max-year" id="max-year-input">
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-movie" id="movie-search">
+                <h3>Search Movie</h3>
+                <div class="search-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><g fill="none" stroke="currentColor" stroke-width="16"><path d="m 89.074145,145.23139 -68.17345,68.17344"/><path d="M 111.27275,167.42999 43.099304,235.60344"/><path stroke-linecap="round" stroke-linejoin="round" d="m 43.099305,235.60344 a 15.696788,15.696788 0 0 1 -22.19861,0"/><path stroke-linecap="round" stroke-linejoin="round" d="m 20.900695,213.40483 a 15.696788,15.696788 0 0 0 0,22.19861"/><path stroke-linecap="round" stroke-linejoin="round" d="M 240.65575,86.483932 A 70.635544,70.635544 0 0 1 170.0202,157.11948 70.635544,70.635544 0 0 1 99.384659,86.483932 70.635544,70.635544 0 0 1 170.0202,15.848389 70.635544,70.635544 0 0 1 240.65575,86.483932 Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m 89.074145,145.23139 22.198605,22.1986"/><path stroke-linecap="round" stroke-linejoin="round" d="m 100.17344,156.33068 19.89988,-19.89987"/><path stroke-linecap="round" stroke-linejoin="round" d="m 70.126446,164.17908 22.198606,22.1986"/><path stroke-linecap="round" stroke-linejoin="round" d="M 209.26216,86.483936 A 39.241967,39.241967 0 0 1 170.0202,125.7259"/></g></svg>
+                </div>
+            </div>
+        </div>
+        <div class="movie-results" id="movie-container">
+            <table id="movie-table">
+                <tr id="table-headings">
+                    <th>Name</th>
+                    <th>Point</th>
+                    <th>Year</th>
+                    <th>Duration</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

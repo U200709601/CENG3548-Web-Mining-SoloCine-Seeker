@@ -1,0 +1,8 @@
+requests
+bs4
+pandas
+lxml
+fastapi
+pathlib
+scrapy [2.11.2]
+selenium
